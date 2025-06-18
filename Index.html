@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Prism Portfolio</title>
+  <link rel="stylesheet" href="projet.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      overflow-x: hidden;   
+    }
+    #particles-js {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="particles-js"></div>
+
+  <h1 class="titre">Portfolio of Prism</h1>
+
+  <div class="menu">
+    <a href="#section1">Présentation</a>
+    <a href="#section2">Compétences</a>
+    <a href="#section3">Projets</a>
+    <a href="#section4">Design</a>
+    <a href="#section5">Contact</a>
+  </div>
+
+  <main>
+    <section id="section1">
+      <div class="image-container">
+          <div class="image-ronde">
+          <img src="96571c1b76e66d6c8efd7af514e1130f.gif" alt="PDP DE Prism">
+        </div>
+        <article class="image3d"></article>
+        <div class="image-banner">
+        <img src="ez.jpg" alt="BANNER DE Prism">
+      </div>
+    </article>
+    </div>
+      <h1 class="glow">Prism</h1>
+      <div class="h2d">
+        <h2>Je suis un Developpeur Web, Compétent, avec une expérience courte pour l'instant, Mais avec un talent inée.</h2>
+      </div>
+    </section>
+
+    <section id="section2">
+      <div class="cards-wrapper">
+        <div class="card small-card">
+          <h1>Capacités</h1>
+          <h2>・Design Numérique</h2><br>
+          <h2>・Montage</h2><br>
+          <h2>・Web (CSS,HTML)</h2>
+        </div>
+
+        <div class="card">
+          <h1>Compétences et Qualités</h1>
+          <h2>Mes Qualités</h2>
+          <p>｜Je suis méthodique</p><br>
+          <p>｜Je suis créatif</p><br>
+          <p>｜J'ai une bonne vision d'ensemble et une bonne visualisation des projets demandés ou en cours.</p><br>
+          <p>｜Je n'ai aucun problème de travail en groupe, aucun problème de sociabilité.</p><br>
+          <p>｜Je suis d'une extrême polyvalence et adaptation au travail demandé.</p><br>
+          <h2>Mes Défauts</h2>
+          <p>｜Aucun, je suis l'homme parfait pour vous.</p>
+        </div>
+
+        <div class="card small-card right">
+          <h1>Logiciels</h1>
+          <h2>・La Suite Adobe</h2><br>
+          <h2>・Figma pour la structure</h2><br>
+          <h2>・Visual Studio Code Etc...</h2><br>
+        </div>
+      </div>
+    </section>
+
+    <section id="section3">
+        <div class="section-projet">
+            <h1>Projets</h1>
+        </div>
+        </section>
+      <section id="section4">
+        <div class="section-design">
+            <h1>Design</h1>
+          </div>
+        </section>
+    <section id="section5">
+      <div class=contact-section>
+      <h1>Contact</h1>
+      <h2>Pour toute demande, ou idée, projets vous pouvez me contactez ici :</h2>
+      <br>
+      <div class="contact-buttons">
+        <a href="discordapp.com/users/1327369250762915852" target="_blank" class="fa-brands glow">
+        <i class="fa-brands fa-discord"></i>
+        <a href="https://www.instagram.com/prismwebdev?igsh=MXd1bzJ4ampsemZ0Mg%3D%3D&utm_source=qr" target="_blank" class="fa-instagram">
+        <i class="fa-brands fa-instagram"></i>
+    </a>
+      </div>
+    </div>
+      <div class="contact-section2">
+      </div>
+    </section>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <script>
+    particlesJS("particles-js", {
+      "particles": {
+        "number": {
+          "value": 80,
+          "density": {
+            "enable": true,
+            "value_area": 800
+          }
+        },
+        "color": {
+          "value": "#00ff00" 
+        },
+        "shape": {
+          "type": "circle",
+          "stroke": {
+            "width": 0,
+            "color": "#000000"
+          }
+        },
+        "opacity": {
+          "value": 0.5,
+          "random": false
+        },
+        "size": {
+          "value": 3,
+          "random": true
+        },
+        "line_linked": {
+          "enable": true,
+          "distance": 150,
+          "color": "#00ff00",
+          "opacity": 0.4,
+          "width": 1
+        },
+        "move": {
+          "enable": true,
+          "speed": 6,
+          "direction": "none",
+          "random": false,
+          "straight": false,
+          "out_mode": "out",
+          "bounce": false
+        }
+      },
+      "interactivity": {
+        "detect_on": "canvas",
+        "events": {
+          "onhover": {
+            "enable": true,
+            "mode": "repulse"
+          },
+          "onclick": {
+            "enable": true,
+            "mode": "push"
+          },
+          "resize": true
+        }
+      },
+      "retina_detect": true
+    });
+    document.querySelectorAll('.menu a').forEach(anchor => {
+  anchor.addEventListener('click', function (e) {
+    e.preventDefault();
+    const targetId = this.getAttribute('href');
+    const targetElement = document.querySelector(targetId);
+
+    targetElement.scrollIntoView({
+      behavior: 'smooth',
+      block: 'start'
+    });
+  });
+});
+  </script>
+</body>
+</html>
